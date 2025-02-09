@@ -12,6 +12,7 @@
   display: flex;
 }
 
+
 .text-dark{
   color: #131313;
 }
@@ -125,6 +126,9 @@ main{
 }
 
 
+.fact{
+  display: f;
+}
 /* some facts related styles */
 .facts-container{
   display: grid;
@@ -156,12 +160,28 @@ main{
 .fact-description{
   max-width: 540px;
 }
+/* ore sponsors */
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.sponsor-companies img{
+  filter: grayscale(100%);
+}
+
 /* responsive media query for header section*/
 @media screen and (max-width: 576px) {
   .navbar, .nav-link,.features,.teams{
     flex-direction: column;
-
   }
+
 
   .team-img-container{
     grid-template-columns: repeat(1,1fr);
@@ -170,7 +190,7 @@ main{
     margin: 20px;
   }
 }
-
+/*For medium screen */
 @media screen and(min-width: 576px) and (max-width: 992px){
     .teams,.features{
       flex-direction: row;
